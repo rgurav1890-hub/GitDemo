@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart College Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <section class="login-container">
+
+            <div class="brand-section">
+
+                <div class="brand-icon">
+                    <span>🎓</span>
+                </div>
+
+                <h1>Smart College</h1>
+
+                <p>
+                    AI-Powered Attendance & Student Management System
+                </p>
+
+            </div>
+
+            <div class="login-card">
+
+                <div class="login-heading">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to continue to your account</p>
+                </div>
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+                        <label for="loginId">Login ID / Email</label>
+
+                        <input
+                            type="text"
+                            id="loginId"
+                            placeholder="Enter your login ID or email"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Login As</label>
+
+                        <select id="role" required>
+                            <option value="">Select your role</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="hod">HOD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="login-options">
+
+                        <label class="remember-option">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+
+                        <button
+                            type="button"
+                            id="forgotPassword"
+                            class="forgot-button"
+                        >
+                            Forgot Password?
+                        </button>
+
+                    </div>
+
+                    <button type="submit" class="login-button">
+                        Sign In
+                    </button>
+
+                    <div id="loginMessage" class="login-message"></div>
+
+                </form>
+
+            </div>
+
+            <footer class="login-footer">
+                <p>© 2026 Smart College System</p>
+                <span>AI-Powered Attendance & Student Management</span>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
